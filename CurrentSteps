@@ -1,0 +1,9 @@
+https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-followers-ids
+
+reading the bsicsto use twitter APIs 
+following is a sample of getting the follower/Id, 5000 accounts per a request.
+
+GET https://api.twitter.com/1.1/followers/ids.json?cursor=-1&screen_name=andypiper&count=5000
+
+before using this in a progarm , authentication has to happen
+for that I'm readig the BAASIC at https://developer.twitter.com/en/docs/basics/getting-started
