@@ -1,0 +1,20 @@
+
+Action (1) 
+Twitter API を使うために　Libraryのtweepy がよく使われていることが分かりました。
+下記の手順で　tweepyをInstallしましたが
+git clone https://github.com/tweepy/tweepy.git　→　OK
+python setup.py install -> NG
+エラーが出ました。
+  File "C:\Users\Lourdina Perera\AppData\Local\Programs\Python\Python37\lib\site-packages\tweepy-3.6.0-py3.7.egg\tweepy\streaming.py", line 358
+    def _start(self, async):
+SyntaxError: invalid syntax
+(調べ中）
+
+Action (2) 
+Twitter API を使うため　Authentocation が必要
+その準備を揃いました。
+# Consumer keys and access tokens, used for OAuth
+#consumer_key = '6DQAErJBT7i9NOysBwQIjSPTH'
+#consumer_secret = 'B6yMjlOJSE6OBlm9JLQC1w4q7G18bpvn94y4e076ZiDUDSXc6r'
+#access_token = '849391373958688768-7xMmUPRhlwM20BZ7sAo69MslHFMzNWc'
+#access_token_secret = 'RrMulWbyPa5yc5OH3uEkrRk10QCHgXnXDNIkVP6k2E1GQ'
