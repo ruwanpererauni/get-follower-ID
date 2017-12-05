@@ -27,7 +27,7 @@ queryone = api.GetFriends(screen_name=username)
 print(len(query["ids"]))
 querytwo = api.GetFollowers(screen_name = username, cursor=-1, count=5)
 
-#following error appeared
+#下記のエラーが発生しました
 #raise TwitterError(data['errors'])
 #twitter.error.TwitterError: [{'message': 'Rate limit exceeded', 'code': 88}]
 
