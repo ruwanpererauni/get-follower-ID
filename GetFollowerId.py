@@ -16,6 +16,16 @@ api = twitter.Api(consumer_key='6DQAErJBT7i9NOysBwQIjSPTH',
 print(api.VerifyCredentials())
 user_profile = api.VerifyCredentials()
 print(user_profile)
+
+# Get your own friend list authenticated abov
+users = api.GetFriends()
+print([u.name for u in users])
+
+# Get a anonymous users friend list
+username = "Andypiper"
+query = api.GetFriends(screen_name=username)
+print(len(query["ids"]))
+
 #print user_profile['created_at']
 #for line in user_profile:
 #GET https://api.twitter.com/1.1/followers/ids.json?cursor=-1&screen_name=andypiper&count=5000
