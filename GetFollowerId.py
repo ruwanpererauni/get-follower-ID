@@ -23,9 +23,11 @@ print([u.name for u in users])
 
 # Get a anonymous users friend list
 username = "Andypiper"
-query = api.GetFriends(screen_name=username)
+queryone = api.GetFriends(screen_name=username)
 print(len(query["ids"]))
+querytwo = api.GetFollowers(screen_name = username, cursor=-1, count=5)
 
-#print user_profile['created_at']
-#for line in user_profile:
-#GET https://api.twitter.com/1.1/followers/ids.json?cursor=-1&screen_name=andypiper&count=5000
+#following error appeared
+#raise TwitterError(data['errors'])
+#twitter.error.TwitterError: [{'message': 'Rate limit exceeded', 'code': 88}]
+
